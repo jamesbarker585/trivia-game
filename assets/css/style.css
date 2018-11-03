@@ -1,0 +1,61 @@
+body {
+    background: url(../images/earthrise.jpg);
+    background-size:100% auto;
+    background-color: black;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+p {
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pageheader {
+    color: lightblue;
+    font-family: 'Abril Fatface', cursive;
+}
+
+
+.buttonstyle {
+    font-family: 'Roboto Condensed', sans-serif;
+	background-color: lightblue;
+	color: black;
+	border-style: none;
+    margin-bottom: 4px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.open .dropdown-toggle.btn-primary {
+    background: #90bad3;
+    border-style: none;
+}
+
+.questionColumn {
+    background-color: lightblue;
+    margin-left: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.FinishScreen {
+    background-color: #90bad3;
+    margin-left: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+

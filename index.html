@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>pale blue dot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 pageheader">
+                <h1>The Wonderful Earth</h1>
+                <p id="subHeader">A trivia game about planet earth.</p>
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 startScreen">
+                <p id="instructions">How much do you know abot our planet?<br>
+                    Try to answer ten questions correctly.
+                    <br>In sixty seconds or less.</p>
+                <button type="button" class="btn btn-info btn-lg buttonstyle startbutton">Get Started!</button>
+            </div>
+        </div>
+        <div class="row theTimer">
+            <div class="col-sm-6">
+                <p style="font-size: 50px;">Time Left:&nbsp<span id="show-number"></span></p>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-9 questionColumn">
+                <form>
+                    <p>Question 1: What is the name of the largest ocean on earth?</p>
+                    <input type="radio" name="question1" value="Pacific Ocean"> Pacific Ocean
+                    <br>
+                    <input type="radio" name="question1" value="Atlantic Ocean"> Atlantic Ocean
+                    <br>
+                    <input type="radio" name="question1" value="Indian Ocean"> Indian Ocean
+                    <br>
+                    <br>
+                    <p>Question 2: Which is hotter, the center of the earth or surface of the sun?</p>
+                    <input type="radio" name="question2" value="center of the earth"> center of the earth
+                    <br>
+                    <input type="radio" name="question2" value="surface of the sun"> surface of the sun
+                    <br>
+                    <input type="radio" name="question2" value="both are the same temperature"> both are the same temperature
+                    <br>
+                    <br>
+                    <p>Question 3: The Great Barrier Reef is found off the coast of which country?</p>
+                    <input type="radio" name="question3" value="New Zealand"> New Zealand
+                    <br>
+                    <input type="radio" name="question3" value="Australia"> Australia
+                    <br>
+                    <input type="radio" name="question3" value="Japan"> Japan
+                    <br>
+                    <br>
+                    <p>Question 4: What is the hottest desert in the world?</p>
+                    <input type="radio" name="question4" value="Arabian"> Arabian
+                    <br>
+                    <input type="radio" name="question4" value="Kalahari"> Kalahari
+                    <br>
+                    <input type="radio" name="question4" value="Sahara"> Sahara
+                    <br>
+                    <br>
+                    <p>Question 5: What is the most common gas found in the air?</p>
+                    <input type="radio" name="question5" value="nitrogen"> nitrogen
+                    <br>
+                    <input type="radio" name="question5" value="oxygen"> oxygen
+                    <br>
+                    <input type="radio" name="question5" value="helium"> helium
+                    <br>
+                    <br>
+                    <p>Question 6: Oxygen forms approximately what proportion of the atmosphere?</p>
+                    <input type="radio" name="question6" value="10%"> 10%
+                    <br>
+                    <input type="radio" name="question6" value="20%"> 20%
+                    <br>
+                    <input type="radio" name="question6" value="30%"> 30%
+                    <br>
+                    <br>
+                    <p>Question 7: Which country produces the world's largest quantity of municipal waste per person per year?</p>
+                    <input type="radio" name="question7" value="India"> India
+                    <br>
+                    <input type="radio" name="question7" value="China"> China
+                    <br>
+                    <input type="radio" name="question7" value="USA"> USA
+                    <br>
+                    <br>
+                    <p>Question 8: Which is the largest national park in the US?</p>
+                    <input type="radio" name="question8" value="Wrangell-St. Elias"> Wrangell-St. Elias
+                    <br>
+                    <input type="radio" name="question8" value="Denali"> Denali
+                    <br>
+                    <input type="radio" name="question8" value="Glacier Bay"> Glacier Bay
+                    <br>
+                    <br>
+                    <p>Question 9: What is the world's smallest continent?</p>
+                    <input type="radio" name="question9" value="Antartica"> Antartica
+                    <br>
+                    <input type="radio" name="question9" value="Australia"> Australia
+                    <br>
+                    <input type="radio" name="question9" value="Europe"> Europe
+                    <br>
+                    <br>
+                    <p>Question 10: In what month is the Earth closest to the Sun?</p>
+                    <input type="radio" name="question10" value="December"> December
+                    <br>
+                    <input type="radio" name="question10" value="May"> May
+                    <br>
+                    <input type="radio" name="question10" value="January"> January
+                    <br>
+                </form>
+                <br>
+                <button type="button" class="btn btn-info btn-lg finish">Finish
+            </div>
+            <!-- <div class="col-sm-3"></div> -->
+        </div>
+        <div class="row FinishScreen">
+            <div class="col-sm-9">
+                <p>Time's Up! Your final score:</p>
+                <p>Correct Responses:&nbsp<span id="rightResponses"></span></p>
+                <p>Incorrect Responses:&nbsp<span id="wrongResponses"></span></p>
+                <br><br>
+                <p>Here are the Correct Answers:<br>
+                   Refreash page to try again.<br> 
+                Question 1: What is the name of the largest ocean on earth?<br>
+                Answer: Pacific Ocean<br><br>
+                Question 2: Which is hotter, the center of the earth or surface of the sun?<br>
+                Answer: center of the earth<br><br>
+                Question 3: The Great Barrier Reef is found off the coast of which country?<br>
+                Answer: Australia<br><br>
+                Question 4: What is the hottest desert in the world?<br>
+                Answer: Sahara<br><br>
+                Question 5: What is the most common gas found in the air?<br>
+                Answer: nitrogen<br><br>
+                Question 6: Oxygen forms approximately what proportion of the atmosphere?<br>
+                Answer: 20%<br><br>
+                Question 7: Which country produces the world's largest quantity of municipal waste per person per year?<br>
+                Answer: USA<br><br>
+                Question 8: Which is the largest national park in the US?<br>
+                Answer: Wrangell-St. Elias<br><br>
+                Question 9: What is the world's smallest continent?<br>
+                Answer: Australia<br><br>
+                Question 10: In what month is the Earth closest to the Sun?<br>
+                Answer: January<br>
+                </p>
+
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
